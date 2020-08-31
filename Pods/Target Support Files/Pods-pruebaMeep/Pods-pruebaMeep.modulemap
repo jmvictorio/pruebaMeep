@@ -1,0 +1,6 @@
+module Pods_pruebaMeep {
+  umbrella header "Pods-pruebaMeep-umbrella.h"
+
+  export *
+  module * { export * }
+}

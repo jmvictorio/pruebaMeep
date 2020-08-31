@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (5.1.0)
+  - GoogleMaps (3.10.0):
+    - GoogleMaps/Maps (= 3.10.0)
+  - GoogleMaps/Base (3.10.0)
+  - GoogleMaps/Maps (3.10.0):
+    - GoogleMaps/Base
+  - PromisedFuture (1.0.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.1.0)
+  - GoogleMaps
+  - PromisedFuture
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - GoogleMaps
+    - PromisedFuture
+
+SPEC CHECKSUMS:
+  Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
+  GoogleMaps: 8c080862ff2748ece9929471b30feb56a6c5079d
+  PromisedFuture: 15ab3542f9d9c9d62886e2228c606a3e0fd16ccd
+
+PODFILE CHECKSUM: 18bbd4d8ff0b4a489e8aae3d8e09bef208b50314
+
+COCOAPODS: 1.9.3

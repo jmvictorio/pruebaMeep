@@ -1,0 +1,993 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42B92C68D8ABD6C68C98A3F2 /* libPods-pruebaMeep.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51AD873EE4FD4D726956CF33 /* libPods-pruebaMeep.a */; };
+		AD05338224FCCE0300723473 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD05338124FCCE0300723473 /* HomeController.swift */; };
+		AD05338424FCCE1700723473 /* HomeViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD05338324FCCE1700723473 /* HomeViewDelegate.swift */; };
+		AD05338624FCCE2300723473 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD05338524FCCE2300723473 /* HomePresenter.swift */; };
+		AD05338824FCD13300723473 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD05338724FCD13300723473 /* Constants.swift */; };
+		AD0533A924FCEF9800723473 /* PointUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD05339924FCEF9800723473 /* PointUseCases.swift */; };
+		AD0533AA24FCEF9800723473 /* PointRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD05339C24FCEF9800723473 /* PointRepository.swift */; };
+		AD0533AB24FCEF9800723473 /* PointMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD05339F24FCEF9800723473 /* PointMapper.swift */; };
+		AD0533AC24FCEF9800723473 /* ElementDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0533A124FCEF9800723473 /* ElementDecodable.swift */; };
+		AD0533AD24FCEF9800723473 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0533A224FCEF9800723473 /* Mapper.swift */; };
+		AD0533AE24FCEF9800723473 /* ElementCodableArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0533A324FCEF9800723473 /* ElementCodableArray.swift */; };
+		AD0533AF24FCEF9800723473 /* PointEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0533A624FCEF9800723473 /* PointEntity.swift */; };
+		AD0533B024FCEF9800723473 /* Strategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0533A824FCEF9800723473 /* Strategy.swift */; };
+		AD0533BA24FCEFB600723473 /* PointService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0533B424FCEFB600723473 /* PointService.swift */; };
+		AD0533BB24FCEFB600723473 /* ServiceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0533B624FCEFB600723473 /* ServiceConfiguration.swift */; };
+		AD0533BC24FCEFB600723473 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0533B724FCEFB600723473 /* BaseService.swift */; };
+		AD0533BD24FCEFB600723473 /* ServiceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0533B824FCEFB600723473 /* ServiceRouter.swift */; };
+		AD0533BE24FCEFB600723473 /* ServiceInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0533B924FCEFB600723473 /* ServiceInterceptor.swift */; };
+		AD0533CF24FCF09600723473 /* json_points.json in Resources */ = {isa = PBXBuildFile; fileRef = AD0533C024FCF09600723473 /* json_points.json */; };
+		AD0533D024FCF09600723473 /* PointRepositoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0533C324FCF09600723473 /* PointRepositoryFactory.swift */; };
+		AD0533D124FCF09600723473 /* BaseRepositoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0533C524FCF09600723473 /* BaseRepositoryFactory.swift */; };
+		AD0533D224FCF09600723473 /* PointRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0533C924FCF09600723473 /* PointRepositoryMock.swift */; };
+		AD0533D324FCF09600723473 /* PointRepositoryNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0533CB24FCF09600723473 /* PointRepositoryNetwork.swift */; };
+		AD0533D424FCF09600723473 /* PointData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0533CE24FCF09600723473 /* PointData.swift */; };
+		AD0533D724FD025E00723473 /* ManagerMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0533D624FD025E00723473 /* ManagerMap.swift */; };
+		ADE97A8824FC325400D4F2B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE97A8724FC325400D4F2B1 /* AppDelegate.swift */; };
+		ADE97A8F24FC325400D4F2B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE97A8D24FC325400D4F2B1 /* Main.storyboard */; };
+		ADE97A9124FC325600D4F2B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE97A9024FC325600D4F2B1 /* Assets.xcassets */; };
+		ADE97A9424FC325600D4F2B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE97A9224FC325600D4F2B1 /* LaunchScreen.storyboard */; };
+		ADE97A9F24FC325700D4F2B1 /* pruebaMeepTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE97A9E24FC325700D4F2B1 /* pruebaMeepTests.swift */; };
+		ADE97AAA24FC325700D4F2B1 /* pruebaMeepUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE97AA924FC325700D4F2B1 /* pruebaMeepUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADE97A9B24FC325700D4F2B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADE97A7C24FC325400D4F2B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADE97A8324FC325400D4F2B1;
+			remoteInfo = pruebaMeep;
+		};
+		ADE97AA624FC325700D4F2B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADE97A7C24FC325400D4F2B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADE97A8324FC325400D4F2B1;
+			remoteInfo = pruebaMeep;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0021F1294B0A20FBCAA794D5 /* Pods-pruebaMeep.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pruebaMeep.release.xcconfig"; path = "Target Support Files/Pods-pruebaMeep/Pods-pruebaMeep.release.xcconfig"; sourceTree = "<group>"; };
+		0FDFB93CDF2637EAD2C1A986 /* Pods-pruebaMeep.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pruebaMeep.debug.xcconfig"; path = "Target Support Files/Pods-pruebaMeep/Pods-pruebaMeep.debug.xcconfig"; sourceTree = "<group>"; };
+		51AD873EE4FD4D726956CF33 /* libPods-pruebaMeep.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pruebaMeep.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD05338124FCCE0300723473 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		AD05338324FCCE1700723473 /* HomeViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewDelegate.swift; sourceTree = "<group>"; };
+		AD05338524FCCE2300723473 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		AD05338724FCD13300723473 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AD05339924FCEF9800723473 /* PointUseCases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointUseCases.swift; sourceTree = "<group>"; };
+		AD05339C24FCEF9800723473 /* PointRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointRepository.swift; sourceTree = "<group>"; };
+		AD05339F24FCEF9800723473 /* PointMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointMapper.swift; sourceTree = "<group>"; };
+		AD0533A124FCEF9800723473 /* ElementDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementDecodable.swift; sourceTree = "<group>"; };
+		AD0533A224FCEF9800723473 /* Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
+		AD0533A324FCEF9800723473 /* ElementCodableArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementCodableArray.swift; sourceTree = "<group>"; };
+		AD0533A624FCEF9800723473 /* PointEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointEntity.swift; sourceTree = "<group>"; };
+		AD0533A824FCEF9800723473 /* Strategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strategy.swift; sourceTree = "<group>"; };
+		AD0533B424FCEFB600723473 /* PointService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointService.swift; sourceTree = "<group>"; };
+		AD0533B624FCEFB600723473 /* ServiceConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceConfiguration.swift; sourceTree = "<group>"; };
+		AD0533B724FCEFB600723473 /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		AD0533B824FCEFB600723473 /* ServiceRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceRouter.swift; sourceTree = "<group>"; };
+		AD0533B924FCEFB600723473 /* ServiceInterceptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceInterceptor.swift; sourceTree = "<group>"; };
+		AD0533C024FCF09600723473 /* json_points.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = json_points.json; sourceTree = "<group>"; };
+		AD0533C324FCF09600723473 /* PointRepositoryFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointRepositoryFactory.swift; sourceTree = "<group>"; };
+		AD0533C524FCF09600723473 /* BaseRepositoryFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRepositoryFactory.swift; sourceTree = "<group>"; };
+		AD0533C924FCF09600723473 /* PointRepositoryMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointRepositoryMock.swift; sourceTree = "<group>"; };
+		AD0533CB24FCF09600723473 /* PointRepositoryNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointRepositoryNetwork.swift; sourceTree = "<group>"; };
+		AD0533CE24FCF09600723473 /* PointData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointData.swift; sourceTree = "<group>"; };
+		AD0533D624FD025E00723473 /* ManagerMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerMap.swift; sourceTree = "<group>"; };
+		ADE97A8424FC325400D4F2B1 /* pruebaMeep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pruebaMeep.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADE97A8724FC325400D4F2B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ADE97A8E24FC325400D4F2B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ADE97A9024FC325600D4F2B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADE97A9324FC325600D4F2B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ADE97A9524FC325600D4F2B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADE97A9A24FC325700D4F2B1 /* pruebaMeepTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pruebaMeepTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADE97A9E24FC325700D4F2B1 /* pruebaMeepTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pruebaMeepTests.swift; sourceTree = "<group>"; };
+		ADE97AA024FC325700D4F2B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADE97AA524FC325700D4F2B1 /* pruebaMeepUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pruebaMeepUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADE97AA924FC325700D4F2B1 /* pruebaMeepUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pruebaMeepUITests.swift; sourceTree = "<group>"; };
+		ADE97AAB24FC325700D4F2B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADE97A8124FC325400D4F2B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42B92C68D8ABD6C68C98A3F2 /* libPods-pruebaMeep.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADE97A9724FC325700D4F2B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADE97AA224FC325700D4F2B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2260A3F7894BFAA50CC75937 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FDFB93CDF2637EAD2C1A986 /* Pods-pruebaMeep.debug.xcconfig */,
+				0021F1294B0A20FBCAA794D5 /* Pods-pruebaMeep.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AD05337924FCCD6200723473 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				AD05338024FCCDD900723473 /* Home */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		AD05337A24FCCD7100723473 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AD0533CC24FCF09600723473 /* Entities */,
+				AD0533C124FCF09600723473 /* Factory */,
+				AD0533BF24FCF09600723473 /* MockData */,
+				AD0533C624FCF09600723473 /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		AD05337C24FCCD7E00723473 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				AD0533B224FCEFB600723473 /* Service */,
+				AD0533A724FCEF9800723473 /* Common */,
+				AD0533A424FCEF9800723473 /* DTO */,
+				AD05339D24FCEF9800723473 /* Mapper */,
+				AD05339A24FCEF9800723473 /* Repositories */,
+				AD05339724FCEF9800723473 /* UseCase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		AD05337D24FCCD8F00723473 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AD0533D524FD024700723473 /* Manager */,
+				ADE97A8724FC325400D4F2B1 /* AppDelegate.swift */,
+				AD05337E24FCCDBA00723473 /* Constants */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		AD05337E24FCCDBA00723473 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				AD05338724FCD13300723473 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		AD05338024FCCDD900723473 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AD05338124FCCE0300723473 /* HomeController.swift */,
+				AD05338324FCCE1700723473 /* HomeViewDelegate.swift */,
+				AD05338524FCCE2300723473 /* HomePresenter.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AD05339724FCEF9800723473 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				AD05339824FCEF9800723473 /* Point */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		AD05339824FCEF9800723473 /* Point */ = {
+			isa = PBXGroup;
+			children = (
+				AD05339924FCEF9800723473 /* PointUseCases.swift */,
+			);
+			path = Point;
+			sourceTree = "<group>";
+		};
+		AD05339A24FCEF9800723473 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				AD05339B24FCEF9800723473 /* Point */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		AD05339B24FCEF9800723473 /* Point */ = {
+			isa = PBXGroup;
+			children = (
+				AD05339C24FCEF9800723473 /* PointRepository.swift */,
+			);
+			path = Point;
+			sourceTree = "<group>";
+		};
+		AD05339D24FCEF9800723473 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				AD05339E24FCEF9800723473 /* Point */,
+				AD0533A024FCEF9800723473 /* Base */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		AD05339E24FCEF9800723473 /* Point */ = {
+			isa = PBXGroup;
+			children = (
+				AD05339F24FCEF9800723473 /* PointMapper.swift */,
+			);
+			path = Point;
+			sourceTree = "<group>";
+		};
+		AD0533A024FCEF9800723473 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				AD0533A124FCEF9800723473 /* ElementDecodable.swift */,
+				AD0533A224FCEF9800723473 /* Mapper.swift */,
+				AD0533A324FCEF9800723473 /* ElementCodableArray.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		AD0533A424FCEF9800723473 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				AD0533A524FCEF9800723473 /* Point */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		AD0533A524FCEF9800723473 /* Point */ = {
+			isa = PBXGroup;
+			children = (
+				AD0533A624FCEF9800723473 /* PointEntity.swift */,
+			);
+			path = Point;
+			sourceTree = "<group>";
+		};
+		AD0533A724FCEF9800723473 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AD0533A824FCEF9800723473 /* Strategy.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		AD0533B224FCEFB600723473 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AD0533B324FCEFB600723473 /* Points */,
+				AD0533B524FCEFB600723473 /* Base */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		AD0533B324FCEFB600723473 /* Points */ = {
+			isa = PBXGroup;
+			children = (
+				AD0533B424FCEFB600723473 /* PointService.swift */,
+			);
+			path = Points;
+			sourceTree = "<group>";
+		};
+		AD0533B524FCEFB600723473 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				AD0533B624FCEFB600723473 /* ServiceConfiguration.swift */,
+				AD0533B724FCEFB600723473 /* BaseService.swift */,
+				AD0533B824FCEFB600723473 /* ServiceRouter.swift */,
+				AD0533B924FCEFB600723473 /* ServiceInterceptor.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		AD0533BF24FCF09600723473 /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				AD0533C024FCF09600723473 /* json_points.json */,
+			);
+			path = MockData;
+			sourceTree = "<group>";
+		};
+		AD0533C124FCF09600723473 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				AD0533C224FCF09600723473 /* Point */,
+				AD0533C424FCF09600723473 /* Base */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		AD0533C224FCF09600723473 /* Point */ = {
+			isa = PBXGroup;
+			children = (
+				AD0533C324FCF09600723473 /* PointRepositoryFactory.swift */,
+			);
+			path = Point;
+			sourceTree = "<group>";
+		};
+		AD0533C424FCF09600723473 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				AD0533C524FCF09600723473 /* BaseRepositoryFactory.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		AD0533C624FCF09600723473 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				AD0533C724FCF09600723473 /* Point */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		AD0533C724FCF09600723473 /* Point */ = {
+			isa = PBXGroup;
+			children = (
+				AD0533C824FCF09600723473 /* Mock */,
+				AD0533CA24FCF09600723473 /* Network */,
+			);
+			path = Point;
+			sourceTree = "<group>";
+		};
+		AD0533C824FCF09600723473 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				AD0533C924FCF09600723473 /* PointRepositoryMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		AD0533CA24FCF09600723473 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AD0533CB24FCF09600723473 /* PointRepositoryNetwork.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		AD0533CC24FCF09600723473 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				AD0533CD24FCF09600723473 /* Point */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		AD0533CD24FCF09600723473 /* Point */ = {
+			isa = PBXGroup;
+			children = (
+				AD0533CE24FCF09600723473 /* PointData.swift */,
+			);
+			path = Point;
+			sourceTree = "<group>";
+		};
+		AD0533D524FD024700723473 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				AD0533D624FD025E00723473 /* ManagerMap.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		ADE97A7B24FC325400D4F2B1 = {
+			isa = PBXGroup;
+			children = (
+				ADE97A8624FC325400D4F2B1 /* pruebaMeep */,
+				ADE97A9D24FC325700D4F2B1 /* pruebaMeepTests */,
+				ADE97AA824FC325700D4F2B1 /* pruebaMeepUITests */,
+				ADE97A8524FC325400D4F2B1 /* Products */,
+				2260A3F7894BFAA50CC75937 /* Pods */,
+				EB7673DB380BDAB068BE7C7F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ADE97A8524FC325400D4F2B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADE97A8424FC325400D4F2B1 /* pruebaMeep.app */,
+				ADE97A9A24FC325700D4F2B1 /* pruebaMeepTests.xctest */,
+				ADE97AA524FC325700D4F2B1 /* pruebaMeepUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADE97A8624FC325400D4F2B1 /* pruebaMeep */ = {
+			isa = PBXGroup;
+			children = (
+				AD05337D24FCCD8F00723473 /* Common */,
+				AD05337A24FCCD7100723473 /* Data */,
+				AD05337C24FCCD7E00723473 /* Domain */,
+				AD05337924FCCD6200723473 /* Presentation */,
+				ADE97A8D24FC325400D4F2B1 /* Main.storyboard */,
+				ADE97A9024FC325600D4F2B1 /* Assets.xcassets */,
+				ADE97A9224FC325600D4F2B1 /* LaunchScreen.storyboard */,
+				ADE97A9524FC325600D4F2B1 /* Info.plist */,
+			);
+			path = pruebaMeep;
+			sourceTree = "<group>";
+		};
+		ADE97A9D24FC325700D4F2B1 /* pruebaMeepTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADE97A9E24FC325700D4F2B1 /* pruebaMeepTests.swift */,
+				ADE97AA024FC325700D4F2B1 /* Info.plist */,
+			);
+			path = pruebaMeepTests;
+			sourceTree = "<group>";
+		};
+		ADE97AA824FC325700D4F2B1 /* pruebaMeepUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ADE97AA924FC325700D4F2B1 /* pruebaMeepUITests.swift */,
+				ADE97AAB24FC325700D4F2B1 /* Info.plist */,
+			);
+			path = pruebaMeepUITests;
+			sourceTree = "<group>";
+		};
+		EB7673DB380BDAB068BE7C7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51AD873EE4FD4D726956CF33 /* libPods-pruebaMeep.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADE97A8324FC325400D4F2B1 /* pruebaMeep */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADE97AAE24FC325700D4F2B1 /* Build configuration list for PBXNativeTarget "pruebaMeep" */;
+			buildPhases = (
+				D60EA1E694598F0A33759FDA /* [CP] Check Pods Manifest.lock */,
+				ADE97A8024FC325400D4F2B1 /* Sources */,
+				ADE97A8124FC325400D4F2B1 /* Frameworks */,
+				ADE97A8224FC325400D4F2B1 /* Resources */,
+				EE14FD6736CA1A24145721E5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pruebaMeep;
+			productName = pruebaMeep;
+			productReference = ADE97A8424FC325400D4F2B1 /* pruebaMeep.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADE97A9924FC325700D4F2B1 /* pruebaMeepTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADE97AB124FC325700D4F2B1 /* Build configuration list for PBXNativeTarget "pruebaMeepTests" */;
+			buildPhases = (
+				ADE97A9624FC325700D4F2B1 /* Sources */,
+				ADE97A9724FC325700D4F2B1 /* Frameworks */,
+				ADE97A9824FC325700D4F2B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADE97A9C24FC325700D4F2B1 /* PBXTargetDependency */,
+			);
+			name = pruebaMeepTests;
+			productName = pruebaMeepTests;
+			productReference = ADE97A9A24FC325700D4F2B1 /* pruebaMeepTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ADE97AA424FC325700D4F2B1 /* pruebaMeepUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADE97AB424FC325700D4F2B1 /* Build configuration list for PBXNativeTarget "pruebaMeepUITests" */;
+			buildPhases = (
+				ADE97AA124FC325700D4F2B1 /* Sources */,
+				ADE97AA224FC325700D4F2B1 /* Frameworks */,
+				ADE97AA324FC325700D4F2B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADE97AA724FC325700D4F2B1 /* PBXTargetDependency */,
+			);
+			name = pruebaMeepUITests;
+			productName = pruebaMeepUITests;
+			productReference = ADE97AA524FC325700D4F2B1 /* pruebaMeepUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADE97A7C24FC325400D4F2B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = jvictorio;
+				TargetAttributes = {
+					ADE97A8324FC325400D4F2B1 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					ADE97A9924FC325700D4F2B1 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = ADE97A8324FC325400D4F2B1;
+					};
+					ADE97AA424FC325700D4F2B1 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = ADE97A8324FC325400D4F2B1;
+					};
+				};
+			};
+			buildConfigurationList = ADE97A7F24FC325400D4F2B1 /* Build configuration list for PBXProject "pruebaMeep" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADE97A7B24FC325400D4F2B1;
+			productRefGroup = ADE97A8524FC325400D4F2B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADE97A8324FC325400D4F2B1 /* pruebaMeep */,
+				ADE97A9924FC325700D4F2B1 /* pruebaMeepTests */,
+				ADE97AA424FC325700D4F2B1 /* pruebaMeepUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADE97A8224FC325400D4F2B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADE97A9424FC325600D4F2B1 /* LaunchScreen.storyboard in Resources */,
+				ADE97A9124FC325600D4F2B1 /* Assets.xcassets in Resources */,
+				AD0533CF24FCF09600723473 /* json_points.json in Resources */,
+				ADE97A8F24FC325400D4F2B1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADE97A9824FC325700D4F2B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADE97AA324FC325700D4F2B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D60EA1E694598F0A33759FDA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pruebaMeep-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE14FD6736CA1A24145721E5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pruebaMeep/Pods-pruebaMeep-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pruebaMeep/Pods-pruebaMeep-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pruebaMeep/Pods-pruebaMeep-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADE97A8024FC325400D4F2B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD0533AF24FCEF9800723473 /* PointEntity.swift in Sources */,
+				AD0533D124FCF09600723473 /* BaseRepositoryFactory.swift in Sources */,
+				AD0533BD24FCEFB600723473 /* ServiceRouter.swift in Sources */,
+				AD0533D324FCF09600723473 /* PointRepositoryNetwork.swift in Sources */,
+				AD05338824FCD13300723473 /* Constants.swift in Sources */,
+				AD0533D224FCF09600723473 /* PointRepositoryMock.swift in Sources */,
+				AD0533BE24FCEFB600723473 /* ServiceInterceptor.swift in Sources */,
+				AD0533AD24FCEF9800723473 /* Mapper.swift in Sources */,
+				AD05338424FCCE1700723473 /* HomeViewDelegate.swift in Sources */,
+				AD0533AE24FCEF9800723473 /* ElementCodableArray.swift in Sources */,
+				AD0533D024FCF09600723473 /* PointRepositoryFactory.swift in Sources */,
+				AD0533AC24FCEF9800723473 /* ElementDecodable.swift in Sources */,
+				AD0533D724FD025E00723473 /* ManagerMap.swift in Sources */,
+				AD0533AA24FCEF9800723473 /* PointRepository.swift in Sources */,
+				AD0533A924FCEF9800723473 /* PointUseCases.swift in Sources */,
+				AD0533D424FCF09600723473 /* PointData.swift in Sources */,
+				AD0533BC24FCEFB600723473 /* BaseService.swift in Sources */,
+				AD0533BA24FCEFB600723473 /* PointService.swift in Sources */,
+				AD0533AB24FCEF9800723473 /* PointMapper.swift in Sources */,
+				AD0533B024FCEF9800723473 /* Strategy.swift in Sources */,
+				ADE97A8824FC325400D4F2B1 /* AppDelegate.swift in Sources */,
+				AD05338624FCCE2300723473 /* HomePresenter.swift in Sources */,
+				AD05338224FCCE0300723473 /* HomeController.swift in Sources */,
+				AD0533BB24FCEFB600723473 /* ServiceConfiguration.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADE97A9624FC325700D4F2B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADE97A9F24FC325700D4F2B1 /* pruebaMeepTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADE97AA124FC325700D4F2B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADE97AAA24FC325700D4F2B1 /* pruebaMeepUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADE97A9C24FC325700D4F2B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADE97A8324FC325400D4F2B1 /* pruebaMeep */;
+			targetProxy = ADE97A9B24FC325700D4F2B1 /* PBXContainerItemProxy */;
+		};
+		ADE97AA724FC325700D4F2B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADE97A8324FC325400D4F2B1 /* pruebaMeep */;
+			targetProxy = ADE97AA624FC325700D4F2B1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ADE97A8D24FC325400D4F2B1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADE97A8E24FC325400D4F2B1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ADE97A9224FC325600D4F2B1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADE97A9324FC325600D4F2B1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ADE97AAC24FC325700D4F2B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ADE97AAD24FC325700D4F2B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADE97AAF24FC325700D4F2B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FDFB93CDF2637EAD2C1A986 /* Pods-pruebaMeep.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6L5VDX4RR3;
+				INFOPLIST_FILE = pruebaMeep/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jvictorio.pruebaMeep;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		ADE97AB024FC325700D4F2B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0021F1294B0A20FBCAA794D5 /* Pods-pruebaMeep.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6L5VDX4RR3;
+				INFOPLIST_FILE = pruebaMeep/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jvictorio.pruebaMeep;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		ADE97AB224FC325700D4F2B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6L5VDX4RR3;
+				INFOPLIST_FILE = pruebaMeepTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jvictorio.pruebaMeepTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pruebaMeep.app/pruebaMeep";
+			};
+			name = Debug;
+		};
+		ADE97AB324FC325700D4F2B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6L5VDX4RR3;
+				INFOPLIST_FILE = pruebaMeepTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jvictorio.pruebaMeepTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pruebaMeep.app/pruebaMeep";
+			};
+			name = Release;
+		};
+		ADE97AB524FC325700D4F2B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6L5VDX4RR3;
+				INFOPLIST_FILE = pruebaMeepUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jvictorio.pruebaMeepUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = pruebaMeep;
+			};
+			name = Debug;
+		};
+		ADE97AB624FC325700D4F2B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6L5VDX4RR3;
+				INFOPLIST_FILE = pruebaMeepUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jvictorio.pruebaMeepUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = pruebaMeep;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADE97A7F24FC325400D4F2B1 /* Build configuration list for PBXProject "pruebaMeep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADE97AAC24FC325700D4F2B1 /* Debug */,
+				ADE97AAD24FC325700D4F2B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADE97AAE24FC325700D4F2B1 /* Build configuration list for PBXNativeTarget "pruebaMeep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADE97AAF24FC325700D4F2B1 /* Debug */,
+				ADE97AB024FC325700D4F2B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADE97AB124FC325700D4F2B1 /* Build configuration list for PBXNativeTarget "pruebaMeepTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADE97AB224FC325700D4F2B1 /* Debug */,
+				ADE97AB324FC325700D4F2B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADE97AB424FC325700D4F2B1 /* Build configuration list for PBXNativeTarget "pruebaMeepUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADE97AB524FC325700D4F2B1 /* Debug */,
+				ADE97AB624FC325700D4F2B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ADE97A7C24FC325400D4F2B1 /* Project object */;
+}
